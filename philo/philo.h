@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   philo.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mahmmous <mahmmous@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mahmmous <mahmmous@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 00:00:00 by mahmmous          #+#    #+#             */
-/*   Updated: 2026/06/05 00:00:00 by mahmmous         ###   ########.fr       */
+/*   Updated: 2026/06/05 00:22:02 by mahmmous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,5 +45,7 @@ typedef struct s_data
 	pthread_mutex_t	stop_mutex;
 	t_philo			*philos;
 }	t_data;
+
+int		init_data(t_data *data);
 
 #endif
