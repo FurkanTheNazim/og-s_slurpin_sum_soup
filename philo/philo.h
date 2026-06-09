@@ -6,7 +6,7 @@
 /*   By: mahmmous <mahmmous@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 00:00:00 by mahmmous          #+#    #+#             */
-/*   Updated: 2026/06/09 06:17:36 by mahmmous         ###   ########.fr       */
+/*   Updated: 2026/06/09 06:45:46 by mahmmous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,6 @@ void		ft_usleep(int ms);
 void		print_status(t_philo *philo, char *status);
 void		*philosopher_routine(void *arg);
 void		*monitor_routine(void *arg);
+void		free_all(t_data *data);
 
 #endif

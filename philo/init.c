@@ -15,6 +15,7 @@
 static int	init_forks(t_data *data)
 {
 	int	i;
+
 	i = 0;
 	data->forks = malloc(sizeof(pthread_mutex_t) * data->num_philos);
 	if (!data->forks)
@@ -29,9 +30,11 @@ static int	init_forks(t_data *data)
 	pthread_mutex_init(&data->stop_mutex, NULL);
 	return (0);
 }
+
 int	init_data(t_data *data)
 {
-	int i;
+	int	i;
+
 	if (init_forks(data))
 		return (1);
 	data->philos = malloc(sizeof(t_philo) * data->num_philos);
