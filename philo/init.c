@@ -6,7 +6,7 @@
 /*   By: mahmmous <mahmmous@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/08 15:02:33 by mahmmous          #+#    #+#             */
-/*   Updated: 2026/06/08 15:47:36 by mahmmous         ###   ########.fr       */
+/*   Updated: 2026/06/09 03:27:08 by mahmmous         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,9 @@ static int	init_forks(t_data *data)
 	pthread_mutex_init(&data->stop_mutex, NULL);
 	return (0);
 }
-
 int	init_data(t_data *data)
 {
-	int	i;
+	int i;
 	if (init_forks(data))
 		return (1);
 	data->philos = malloc(sizeof(t_philo) * data->num_philos);

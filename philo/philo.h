@@ -46,6 +46,9 @@ typedef struct s_data
 	t_philo			*philos;
 }	t_data;
 
-int		init_data(t_data *data);
+int			init_data(t_data *data);
+long long	get_time_ms(void);
+void		ft_usleep(int ms);
+void		print_status(t_philo *philo, char *status);
 
 #endif
